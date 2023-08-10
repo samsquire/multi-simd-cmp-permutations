@@ -31,6 +31,7 @@ def explore():
 
   for n in range(0, count_if):
     print("BATCH")
+    
     for i4, candidate in enumerate(state_space[0]):
       new_items = []
       for i, item in enumerate(previous):
@@ -57,3 +58,5 @@ for item in explore():
 for statement in if_statements:
   print(statement)
                                
+combinations = list(itertools.permutations(items, 2))
+print(len(combinations))
